@@ -10,6 +10,7 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/5.1/ref/settings/
 """
 
+import os
 from pathlib import Path
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -122,3 +123,55 @@ STATIC_URL = "static/"
 # https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
+
+
+DJANGO_LOG_LEVEL = "INFO"
+
+LOGGING = {
+    "version": 1,
+    "disable_existing_loggers": False,
+    "root": {
+        "level": DJANGO_LOG_LEVEL,
+        "handlers": ["file", "console"],
+    },
+    "handlers": {
+        "file": {
+            "level": DJANGO_LOG_LEVEL,
+            "class": "logging.FileHandler",
+            "filename": os.path.join(BASE_DIR, "debug.log"),
+            "formatter": "app",
+        },
+        "console": {
+            "class": "logging.StreamHandler",
+            "formatter": "app",
+        },
+        "mail_admins": {
+            "level": "ERROR",
+            "class": "django.utils.log.AdminEmailHandler",
+            "formatter": "app",
+        },
+    },
+    "loggers": {
+        "django": {
+            "handlers": ["file", "console", "mail_admins"],
+            "level": DJANGO_LOG_LEVEL,
+            "propagate": False,  # Prevent propagation to avoid duplicate logs
+        },
+        "django.request": {
+            "handlers": ["file", "console", "mail_admins"],
+            "level": "ERROR",
+            "propagate": False,  # Prevent propagation to avoid duplicate logs
+        },
+        "django.server": {
+            "handlers": ["file", "console"],
+            "level": "ERROR",
+            "propagate": False,  # Prevent propagation to avoid duplicate logs
+        },
+    },
+    "formatters": {
+        "app": {
+            "format": "%(asctime)s [%(levelname)-8s] (%(module)s.%(funcName)s) %(message)s",
+            "datefmt": "%Y-%m-%d %H:%M:%S",
+        },
+    },
+}

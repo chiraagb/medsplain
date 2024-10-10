@@ -1,0 +1,6 @@
+2024-10-10 10:12:10 [INFO    ] (autoreload.run_with_reloader) Watching for file changes with StatReloader
+2024-10-10 10:12:13 [INFO    ] (autoreload.trigger_reload) /Users/chiraagb/Desktop/altaeirr/Projects/medsplain/backend/config/settings.py changed, reloading.
+2024-10-10 10:12:13 [INFO    ] (autoreload.run_with_reloader) Watching for file changes with StatReloader
+2024-10-10 10:12:16 [INFO    ] (autoreload.trigger_reload) /Users/chiraagb/Desktop/altaeirr/Projects/medsplain/backend/config/settings.py changed, reloading.
+2024-10-10 10:12:34 [INFO    ] (autoreload.run_with_reloader) Watching for file changes with StatReloader
+2024-10-10 10:13:24 [INFO    ] (autoreload.run_with_reloader) Watching for file changes with StatReloader
