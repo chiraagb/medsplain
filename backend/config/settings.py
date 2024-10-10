@@ -38,8 +38,11 @@ INSTALLED_APPS = [
     "django.contrib.sessions",
     "django.contrib.messages",
     "django.contrib.staticfiles",
-    "medsplain",
+    # Third party app
     "rest_framework",
+    "rest_framework.authtoken",
+    # Project app
+    "medsplain",
 ]
 
 MIDDLEWARE = [
@@ -175,4 +178,10 @@ LOGGING = {
             "datefmt": "%Y-%m-%d %H:%M:%S",
         },
     },
+}
+
+REST_FRAMEWORK = {
+    "DEFAULT_AUTHENTICATION_CLASSES": [
+        "rest_framework.authentication.TokenAuthentication",
+    ],
 }
