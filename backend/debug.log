@@ -271,3 +271,14 @@ django.template.exceptions.TemplateDoesNotExist: rest_framework/api.html
 2024-10-10 19:29:29 [INFO    ] (autoreload.trigger_reload) /Users/chiraagb/Desktop/altaeirr/Projects/medsplain/backend/config/settings.py changed, reloading.
 2024-10-10 19:29:29 [INFO    ] (autoreload.run_with_reloader) Watching for file changes with StatReloader
 2024-10-10 19:31:01 [INFO    ] (autoreload.run_with_reloader) Watching for file changes with StatReloader
+2024-10-10 20:13:23 [INFO    ] (autoreload.trigger_reload) /Users/chiraagb/Desktop/altaeirr/Projects/medsplain/backend/medsplain/views.py changed, reloading.
+2024-10-10 20:13:23 [INFO    ] (autoreload.run_with_reloader) Watching for file changes with StatReloader
+2024-10-10 20:15:15 [INFO    ] (autoreload.trigger_reload) /Users/chiraagb/Desktop/altaeirr/Projects/medsplain/backend/medsplain/views.py changed, reloading.
+2024-10-10 20:15:15 [INFO    ] (autoreload.run_with_reloader) Watching for file changes with StatReloader
+2024-10-10 20:15:21 [INFO    ] (autoreload.trigger_reload) /Users/chiraagb/Desktop/altaeirr/Projects/medsplain/backend/medsplain/views.py changed, reloading.
+2024-10-10 20:15:22 [INFO    ] (autoreload.run_with_reloader) Watching for file changes with StatReloader
+2024-10-10 20:15:53 [INFO    ] (autoreload.trigger_reload) /Users/chiraagb/Desktop/altaeirr/Projects/medsplain/backend/medsplain/views.py changed, reloading.
+2024-10-10 20:15:54 [INFO    ] (autoreload.run_with_reloader) Watching for file changes with StatReloader
+2024-10-10 20:15:57 [INFO    ] (autoreload.trigger_reload) /Users/chiraagb/Desktop/altaeirr/Projects/medsplain/backend/medsplain/views.py changed, reloading.
+2024-10-10 20:15:57 [INFO    ] (autoreload.run_with_reloader) Watching for file changes with StatReloader
+2024-10-12 04:28:50 [INFO    ] (autoreload.run_with_reloader) Watching for file changes with StatReloader

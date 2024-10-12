@@ -10,3 +10,10 @@ class DemoView(APIView):
     def get(self, request):
         content = {"message": "Hello World"}
         return Response(content, status=status.HTTP_200_OK)
+
+
+class TokenAuthView(APIView):
+    permission_classes = (IsAuthenticated,)
+
+    def post(self, request):
+        data = request.data

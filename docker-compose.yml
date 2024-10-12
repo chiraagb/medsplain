@@ -1,0 +1,45 @@
+services:
+  backend:
+    build: ./backend
+    command: >
+      bash -c "
+      python manage.py makemigrations
+      && python manage.py migrate
+      && python manage.py runserver 0.0.0.0:8000
+      "
+    volumes:
+      - ./backend:/code/backend/
+    ports:
+      - 8001:8000
+    environment:
+      - DJANGO_SECRET_KEY=${DJANGO_SECRET_KEY}
+      - CSRF_TRUSTED_ORIGINS=${CSRF_TRUSTED_ORIGINS}
+      - ALLOWED_HOSTS=${ALLOWED_HOSTS}
+      - POSTGRES_USER=${DB_USERNAME}
+      - POSTGRES_PASSWORD=${DB_PASSWORD}
+      - POSTGRES_DB=${DB_NAME}
+      - POSTGRES_PORT=${DB_PORT}
+      - POSTGRES_HOST=${DB_HOST}
+      - DEBUG=${DEBUG}
+
+    depends_on:
+      - db
+
+  db:
+    image: postgres:14
+    restart: always
+    volumes:
+      - medsplain_data:/var/lib/postgresql/data/
+
+    environment:
+      - POSTGRES_USER=${DB_USERNAME}
+      - POSTGRES_PASSWORD=${DB_PASSWORD}
+      - POSTGRES_DB=${DB_NAME}
+      - POSTGRES_PORT=${DB_PORT}
+      - POSTGRES_HOST=${DB_HOST}
+
+    ports:
+      - "5434:5432"
+
+volumes:
+  medsplain_data:
