@@ -284,3 +284,14 @@ django.template.exceptions.TemplateDoesNotExist: rest_framework/api.html
 2024-10-12 04:28:50 [INFO    ] (autoreload.run_with_reloader) Watching for file changes with StatReloader
 2024-10-12 04:52:12 [INFO    ] (autoreload.run_with_reloader) Watching for file changes with StatReloader
 2024-10-31 16:45:23 [INFO    ] (autoreload.run_with_reloader) Watching for file changes with StatReloader
+2024-10-31 18:22:37 [INFO    ] (autoreload.trigger_reload) /code/backend/config/settings.py changed, reloading.
+2024-10-31 18:22:38 [INFO    ] (autoreload.run_with_reloader) Watching for file changes with StatReloader
+2024-10-31 18:22:54 [INFO    ] (autoreload.trigger_reload) /code/backend/config/settings.py changed, reloading.
+2024-10-31 18:22:55 [INFO    ] (autoreload.run_with_reloader) Watching for file changes with StatReloader
+2024-10-31 18:23:02 [INFO    ] (autoreload.trigger_reload) /code/backend/config/settings.py changed, reloading.
+2024-10-31 18:23:03 [INFO    ] (autoreload.run_with_reloader) Watching for file changes with StatReloader
+2024-10-31 18:23:11 [INFO    ] (autoreload.trigger_reload) /code/backend/config/settings.py changed, reloading.
+2024-10-31 18:23:12 [INFO    ] (autoreload.run_with_reloader) Watching for file changes with StatReloader
+2024-10-31 18:28:29 [INFO    ] (autoreload.trigger_reload) /code/backend/config/settings.py changed, reloading.
+2024-10-31 18:28:30 [INFO    ] (autoreload.run_with_reloader) Watching for file changes with StatReloader
+2024-10-31 18:32:16 [INFO    ] (autoreload.trigger_reload) /code/backend/config/settings.py changed, reloading.
