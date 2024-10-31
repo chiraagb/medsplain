@@ -282,3 +282,4 @@ django.template.exceptions.TemplateDoesNotExist: rest_framework/api.html
 2024-10-10 20:15:57 [INFO    ] (autoreload.trigger_reload) /Users/chiraagb/Desktop/altaeirr/Projects/medsplain/backend/medsplain/views.py changed, reloading.
 2024-10-10 20:15:57 [INFO    ] (autoreload.run_with_reloader) Watching for file changes with StatReloader
 2024-10-12 04:28:50 [INFO    ] (autoreload.run_with_reloader) Watching for file changes with StatReloader
+2024-10-12 04:52:12 [INFO    ] (autoreload.run_with_reloader) Watching for file changes with StatReloader
