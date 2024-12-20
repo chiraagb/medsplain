@@ -4,5 +4,14 @@
   },
   "editor.quickSuggestions": {
     "strings": "on"
-  }
+  },
+  "[python]": {
+    "editor.formatOnSave": true,
+    "editor.codeActionsOnSave": {
+      "source.fixAll": "explicit",
+      "source.organizeImports": "explicit"
+    },
+    "editor.defaultFormatter": "charliermarsh.ruff"
+  },
+  "editor.rulers": [88]
 }
